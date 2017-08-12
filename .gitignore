@@ -1,6 +1,0 @@
-# ignore latex output files
-*.aux
-*.log
-*.pdf
-*.out
-*.swp
