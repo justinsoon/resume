@@ -13,4 +13,4 @@ script:
   - pdflatex -halt-on-error resume.tex
 
 after_success:
-  - chmod +x deploy.sh
+  - ./deploy.sh
