@@ -10,7 +10,7 @@ before_install:
   - chmod +x deploy.sh
 
 install:
-- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
+- root apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
 
 script:
   - pdflatex -halt-on-error resume.tex
