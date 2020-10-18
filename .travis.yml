@@ -3,17 +3,14 @@ dist: trusty
 sudo: required
 language:
   - generic
-"os": [
-    "ubuntu"
-  ],
 cache:
   - apt
-  
+
 before_install:
   - chmod +x deploy.sh
 
 install:
-- apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
+- apt-get update && apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
 
 script:
   - pdflatex -halt-on-error resume.tex
